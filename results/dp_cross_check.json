@@ -1,0 +1,88 @@
+{
+ "method": "semi-Lagrangian Bellman operator in z, full fractional allocation grid, exact reflection; policy iteration; Richardson over dt=0.02,0.01,0.005",
+ "rows": [
+  {
+   "allocation_grid_per_class": 36,
+   "dp_value_at_z0": 0.15908743,
+   "formula_value_at_z0": 0.15909091,
+   "law": "two_point",
+   "max_rel_error_extrapolated": 2.188834e-05,
+   "max_rel_error_finest": 0.001111162,
+   "rho": "1/4"
+  },
+  {
+   "allocation_grid_per_class": 36,
+   "dp_value_at_z0": 0.43749448,
+   "formula_value_at_z0": 0.4375,
+   "law": "two_point",
+   "max_rel_error_extrapolated": 1.2619222e-05,
+   "max_rel_error_finest": 0.00074489646,
+   "rho": "1/2"
+  },
+  {
+   "allocation_grid_per_class": 36,
+   "dp_value_at_z0": 1.1785699,
+   "formula_value_at_z0": 1.1785714,
+   "law": "two_point",
+   "max_rel_error_extrapolated": 1.2662154e-06,
+   "max_rel_error_finest": 0.00024019159,
+   "rho": "3/4"
+  },
+  {
+   "allocation_grid_per_class": 36,
+   "dp_value_at_z0": 3.2343745,
+   "formula_value_at_z0": 3.234375,
+   "law": "two_point",
+   "max_rel_error_extrapolated": 1.6442109e-07,
+   "max_rel_error_finest": 4.1107519e-05,
+   "rho": "9/10"
+  },
+  {
+   "allocation_grid_per_class": 12,
+   "dp_value_at_z0": 0.14999799,
+   "formula_value_at_z0": 0.15,
+   "law": "three_point_zero_atom",
+   "max_rel_error_extrapolated": 1.5506023e-05,
+   "max_rel_error_finest": 0.00092044189,
+   "rho": "1/4"
+  },
+  {
+   "allocation_grid_per_class": 12,
+   "dp_value_at_z0": 0.85714117,
+   "formula_value_at_z0": 0.85714286,
+   "law": "three_point_zero_atom",
+   "max_rel_error_extrapolated": 3.2628596e-06,
+   "max_rel_error_finest": 0.00077960286,
+   "rho": "3/4"
+  },
+  {
+   "allocation_grid_per_class": 12,
+   "dp_value_at_z0": 1.9687451,
+   "formula_value_at_z0": 1.96875,
+   "law": "three_point_zero_atom",
+   "max_rel_error_extrapolated": 2.9411966e-06,
+   "max_rel_error_finest": 0.0016009336,
+   "rho": "9/10"
+  },
+  {
+   "allocation_grid_per_class": 36,
+   "dp_value_at_z0": 0.16666163,
+   "formula_value_at_z0": 0.16666667,
+   "law": "deterministic",
+   "max_rel_error_extrapolated": 3.0220838e-05,
+   "max_rel_error_finest": 0.0018598072,
+   "rho": "1/4"
+  },
+  {
+   "allocation_grid_per_class": 36,
+   "dp_value_at_z0": 1.4999953,
+   "formula_value_at_z0": 1.5,
+   "law": "deterministic",
+   "max_rel_error_extrapolated": 3.1308679e-06,
+   "max_rel_error_finest": 0.000831771,
+   "rho": "3/4"
+  }
+ ],
+ "status": "PASS",
+ "uses_value_formula": false
+}

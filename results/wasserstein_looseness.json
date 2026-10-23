@@ -1,0 +1,24 @@
+{
+ "W1_exponential_uniform": 0.32380512,
+ "rows": [
+  {
+   "bound": 0.041632087,
+   "ratio_bound_to_gap": 5.3713741,
+   "rho": 0.3,
+   "true_gap": 0.007750733
+  },
+  {
+   "bound": 1.457123,
+   "ratio_bound_to_gap": 7.3704831,
+   "rho": 0.75,
+   "true_gap": 0.19769709
+  },
+  {
+   "bound": 13.114107,
+   "ratio_bound_to_gap": 16.365503,
+   "rho": 0.9,
+   "true_gap": 0.80132627
+  }
+ ],
+ "status": "PASS"
+}

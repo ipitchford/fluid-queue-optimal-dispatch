@@ -1,0 +1,6 @@
+# Python 3.13 (3.12+ should work); exact versions used to produce and replay the delivered outputs.
+# The exact sections of verify_all.py and code/simulate.py use only the standard library.
+numpy==2.4.4
+scipy==1.17.1
+sympy==1.14.0
+matplotlib==3.10.8   # figures only

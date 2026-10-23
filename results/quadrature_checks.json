@@ -1,0 +1,89 @@
+{
+ "laws": [
+  "exponential",
+  "uniform",
+  "gamma",
+  "pareto",
+  "lognormal",
+  "two_point"
+ ],
+ "loads": [
+  0.3,
+  0.5,
+  0.75,
+  0.9
+ ],
+ "max_errors": {
+  "axis_optimal_hamiltonian": "below 1e-6",
+  "direct_path_cost": "below 1e-6",
+  "gradient": "below 1e-6",
+  "homogeneity": "below 1e-6",
+  "optimal_hamiltonian": "below 1e-6"
+ },
+ "min_axis_hamiltonian_nonnegative": true,
+ "min_interior_hamiltonian_nonnegative": true,
+ "status": "PASS",
+ "table_rho_0_75_state_half_half": [
+  {
+   "H": 2.2892814,
+   "balanced": 1.5,
+   "law": "exponential",
+   "most_work_left": 1.10851,
+   "optimal": 0.91431933,
+   "parameter": 1.0,
+   "reduction_vs_balanced_percent": 39.045378,
+   "reduction_vs_most_work_left_percent": 17.51817
+  },
+  {
+   "H": 1.6329932,
+   "balanced": 1.5,
+   "law": "uniform",
+   "most_work_left": 1.247162,
+   "optimal": 1.1120164,
+   "parameter": 1.0,
+   "reduction_vs_balanced_percent": 25.865572,
+   "reduction_vs_most_work_left_percent": 10.836251
+  },
+  {
+   "H": 1.4146697,
+   "balanced": 1.5,
+   "law": "gamma",
+   "most_work_left": 1.2486032,
+   "optimal": 1.1642566,
+   "parameter": 4,
+   "reduction_vs_balanced_percent": 22.382892,
+   "reduction_vs_most_work_left_percent": 6.7552751
+  },
+  {
+   "H": 3.0,
+   "balanced": 1.5,
+   "law": "pareto",
+   "most_work_left": 1.0,
+   "optimal": 0.85389177,
+   "parameter": 1.5,
+   "reduction_vs_balanced_percent": 43.073882,
+   "reduction_vs_most_work_left_percent": 14.610823
+  },
+  {
+   "H": 2.5363532,
+   "balanced": 1.5,
+   "law": "lognormal",
+   "most_work_left": 1.066179,
+   "optimal": 0.87635892,
+   "parameter": 1,
+   "reduction_vs_balanced_percent": 41.576072,
+   "reduction_vs_most_work_left_percent": 17.803768
+  },
+  {
+   "H": 1.5,
+   "balanced": 1.5,
+   "law": "two_point",
+   "most_work_left": 1.3125,
+   "optimal": 1.1785714,
+   "parameter": 1.0,
+   "reduction_vs_balanced_percent": 21.428571,
+   "reduction_vs_most_work_left_percent": 10.204082
+  }
+ ],
+ "universal_bounds_checked": "V(1,0) >= rho/2 and B(0) >= 1+1/r for every law and load"
+}

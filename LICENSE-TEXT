@@ -1,0 +1,9 @@
+The text of the paper (paper/), the figures (figures/), the results (results/)
+and this package's documentation are dedicated to the public domain under
+Creative Commons CC0 1.0 Universal.
+
+To the extent possible under law, the author has waived all copyright and
+related or neighbouring rights to these works.
+Full legal code: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+The code in code/ is licensed separately under the MIT License (LICENSE-CODE).

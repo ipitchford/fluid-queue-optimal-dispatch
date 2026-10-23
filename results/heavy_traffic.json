@@ -1,0 +1,178 @@
+{
+ "balanced_routing_limit_constant": 0.5,
+ "card_heavy_traffic_constant_xgs": "K_CARD = 2 P(S >= m); ratio to LWL constant 1 equals fluid ratio 2 P(S>=m)",
+ "continuous_laws": [
+  {
+   "law": "exponential",
+   "limit_constant_P_S_ge_m": 0.18668231,
+   "loads": [
+    {
+     "lower_bound": 0.13972857,
+     "rho": 0.9,
+     "scaled_value_axis_start": 0.13972857,
+     "scaled_value_balanced_start": 0.2134942,
+     "upper_bound": 0.2134942
+    },
+    {
+     "lower_bound": 0.18185061,
+     "rho": 0.99,
+     "scaled_value_axis_start": 0.18185061,
+     "scaled_value_balanced_start": 0.19001342,
+     "upper_bound": 0.19001342
+    },
+    {
+     "lower_bound": 0.18619786,
+     "rho": 0.999,
+     "scaled_value_axis_start": 0.18619786,
+     "scaled_value_balanced_start": 0.18702211,
+     "upper_bound": 0.18702211
+    }
+   ],
+   "parameter": 1.0,
+   "work_median_m": 1.678347
+  },
+  {
+   "law": "uniform",
+   "limit_constant_P_S_ge_m": 0.29289322,
+   "loads": [
+    {
+     "lower_bound": 0.22917961,
+     "rho": 0.9,
+     "scaled_value_axis_start": 0.22917961,
+     "scaled_value_balanced_start": 0.29362683,
+     "upper_bound": 0.29362683
+    },
+    {
+     "lower_bound": 0.28643764,
+     "rho": 0.99,
+     "scaled_value_axis_start": 0.28643764,
+     "scaled_value_balanced_start": 0.29340037,
+     "upper_bound": 0.29340037
+    },
+    {
+     "lower_bound": 0.29224686,
+     "rho": 0.999,
+     "scaled_value_axis_start": 0.29224686,
+     "scaled_value_balanced_start": 0.2929484,
+     "upper_bound": 0.2929484
+    }
+   ],
+   "parameter": 1.0,
+   "work_median_m": 1.4142136
+  },
+  {
+   "law": "gamma",
+   "limit_constant_P_S_ge_m": 0.31428611,
+   "loads": [
+    {
+     "lower_bound": 0.24137457,
+     "rho": 0.9,
+     "scaled_value_axis_start": 0.24137457,
+     "scaled_value_balanced_start": 0.31132513,
+     "upper_bound": 0.31132513
+    },
+    {
+     "lower_bound": 0.30687386,
+     "rho": 0.99,
+     "scaled_value_axis_start": 0.30687386,
+     "scaled_value_balanced_start": 0.3143951,
+     "upper_bound": 0.3143951
+    },
+    {
+     "lower_bound": 0.31354377,
+     "rho": 0.999,
+     "scaled_value_axis_start": 0.31354377,
+     "scaled_value_balanced_start": 0.31430116,
+     "upper_bound": 0.31430116
+    }
+   ],
+   "parameter": 4,
+   "work_median_m": 1.1677272
+  },
+  {
+   "law": "pareto",
+   "limit_constant_P_S_ge_m": 0.125,
+   "loads": [
+    {
+     "lower_bound": 0.079012346,
+     "rho": 0.9,
+     "scaled_value_axis_start": 0.079012346,
+     "scaled_value_balanced_start": 0.17491527,
+     "upper_bound": 0.17491527
+    },
+    {
+     "lower_bound": 0.12003775,
+     "rho": 0.99,
+     "scaled_value_axis_start": 0.12003775,
+     "scaled_value_balanced_start": 0.13090512,
+     "upper_bound": 0.13090512
+    },
+    {
+     "lower_bound": 0.12450038,
+     "rho": 0.999,
+     "scaled_value_axis_start": 0.12450038,
+     "scaled_value_balanced_start": 0.12559977,
+     "upper_bound": 0.12559977
+    }
+   ],
+   "parameter": 1.5,
+   "work_median_m": 1.3333333
+  },
+  {
+   "law": "lognormal",
+   "limit_constant_P_S_ge_m": 0.15865525,
+   "loads": [
+    {
+     "lower_bound": 0.11448316,
+     "rho": 0.9,
+     "scaled_value_axis_start": 0.11448316,
+     "scaled_value_balanced_start": 0.19454681,
+     "upper_bound": 0.19454681
+    },
+    {
+     "lower_bound": 0.15405516,
+     "rho": 0.99,
+     "scaled_value_axis_start": 0.15405516,
+     "scaled_value_balanced_start": 0.16300447,
+     "upper_bound": 0.16300447
+    },
+    {
+     "lower_bound": 0.15819352,
+     "rho": 0.999,
+     "scaled_value_axis_start": 0.15819352,
+     "scaled_value_balanced_start": 0.159098,
+     "upper_bound": 0.159098
+    }
+   ],
+   "parameter": 1,
+   "work_median_m": 1.6487213
+  }
+ ],
+ "status": "PASS",
+ "theorem": "(1-rho) V(x,y) -> P(S >= m) x^2, m = work median (atom split)",
+ "two_point_exact": {
+  "limit_constant": "1/3",
+  "sequence": [
+   {
+    "rho": "9/10",
+    "scaled_value_axis_start": "4/15",
+    "scaled_value_balanced_start": "207/640"
+   },
+   {
+    "rho": "99/100",
+    "scaled_value_axis_start": "49/150",
+    "scaled_value_balanced_start": "20097/60400"
+   },
+   {
+    "rho": "999/1000",
+    "scaled_value_axis_start": "499/1500",
+    "scaled_value_balanced_start": "2000997/6004000"
+   },
+   {
+    "rho": "9999/10000",
+    "scaled_value_axis_start": "4999/15000",
+    "scaled_value_balanced_start": "200009997/600040000"
+   }
+  ]
+ }
+}

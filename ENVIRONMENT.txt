@@ -1,0 +1,27 @@
+Runtime: Python 3.13 (3.12 or later should work) with the exact pins in requirements.txt:
+  numpy==2.4.4, scipy==1.17.1 (quadrature, root finding, special functions, dynamic-programming check),
+  sympy==1.14.0 (symbolic identities), matplotlib==3.10.8 (figures only). sympy pulls in mpmath (1.3.0 on the
+  tested host). The exact sections of verify_all.py, fluid_exact.py and simulate.py use only the standard library.
+Tested interpreter: /Users/admin/.venvs/analysis-py313/bin/python, CPython 3.13.5 (Clang 17.0.0), macOS 27.0.1
+  (Darwin, arm64). Resolved matplotlib dependencies on that host: contourpy 1.3.3, cycler 0.12.1,
+  fonttools 4.62.1, kiwisolver 1.5.0, packaging 26.0, pillow 12.2.0, pyparsing 3.3.2,
+  python-dateutil 2.9.0.post0, six 1.17.0.
+Exact arithmetic: fractions.Fraction for the finite-support controller, the running example, the certified
+  brackets, the Pareto enclosures and the deterministic cases. No floating point enters those certificates.
+  The quadrature, heavy-traffic, Wasserstein and dynamic-programming sections are floating point and are
+  labelled as numerical evidence.
+Determinism: JSON is written with sorted keys, no timestamps, versions or paths; floats are rounded to 8
+  significant digits; exact rationals are strings or outward-rounded decimals. verify_all.py output is
+  byte-identical with and without -O. simulate.py is seeded and deterministic (identical output for different
+  process counts, according to the revision record).
+Optimised mode: all checks are explicit (no assert statements), so python -O disables nothing; scripts are run
+  with -B so no bytecode is written beside them, and with -I (isolated mode) where possible.
+Runtime on the tested host: verify_all.py about 1 minute (quadrature_checks about 45 s, pareto_101_regression
+  about 13 s); negative_controls.py about 1 minute; simulate.py --quick about 11 s with 2 processes; the full
+  simulate.py about 50 CPU-minutes (4 processes by default).
+Continuous integration: GitHub Actions, ubuntu-latest, CPython 3.13 (.github/workflows/replay.yml): SHA256SUMS,
+  pinned install, full verify_all.py, comparison by tools/compare_results.py (exact fields exactly, floats to
+  relative 1e-6; byte identity reported but not required off the release host), negative controls, a
+  simulation smoke test (not compared), and a clean working tree. The full simulation is not rerun in CI.
+PDF: built with pdflatex (TeX Live 2026, pdfTeX 1.40.29), run three times from paper/paper.tex; the PDF is not
+  part of the byte-for-byte replay.

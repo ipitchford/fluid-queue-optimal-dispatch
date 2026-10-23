@@ -1,0 +1,41 @@
+\begin{table}[t]
+\centering\footnotesize\setlength{\tabcolsep}{3.2pt}
+\caption{Simulated mean waiting time under JSW (with 95\% interval) and, for the other policies, the mean per-replication ratio of mean waiting time to JSW (common random numbers; 20 replications of $10^6$ arrivals). Ratios below one beat JSW; the best ratio in each row is in bold. Numerical evidence only.}\label{tab:sim}
+\begin{tabular}{@{}llcccccccc@{}}
+\toprule
+Law & $\rho$ & JSW wait & RND & SITA & Dice & CARD & FLUID & FLUID-S\\
+\midrule
+Exponential & 0.5 & 0.666\,$\pm$0.002 & 3.000 & 2.015 & 0.968 & 0.950 & 1.039 & \textbf{0.946}\\
+ & 0.75 & 2.58\,$\pm$0.01 & 2.333 & 1.562 & 0.902 & 0.868 & 1.322 & \textbf{0.861}\\
+ & 0.9 & 8.48\,$\pm$0.10 & 2.120 & 1.422 & \textbf{0.752} & 0.846 & 4.252 & 0.825\\
+\addlinespace[2pt]
+Two-point & 0.5 & 0.435\,$\pm$0.001 & 2.871 & 2.678 & 1.000 & \textbf{0.996} & 1.449 & \textbf{0.996}\\
+ & 0.75 & 1.639\,$\pm$0.008 & 2.295 & 2.140 & \textbf{0.965} & 1.026 & 3.291 & 1.057\\
+ & 0.9 & 5.38\,$\pm$0.05 & 2.095 & 1.956 & \textbf{0.910} & 1.016 & $>10^3$ & 1.125\\
+\addlinespace[2pt]
+H$_2$, SCV 10 & 0.5 & 3.01\,$\pm$0.04 & 3.660 & 0.606 & \textbf{0.411} & 0.649 & 0.595 & 0.601\\
+ & 0.75 & 13.00\,$\pm$0.18 & 2.537 & 0.419 & \textbf{0.329} & 0.382 & 0.330 & 0.356\\
+ & 0.9 & 46.60\,$\pm$1.41 & 2.157 & 0.358 & 0.282 & 0.269 & 0.368 & \textbf{0.256}\\
+\addlinespace[2pt]
+Bounded Pareto & 0.5 & 4.67\,$\pm$0.96 & 8.553 & 2.333 & 0.402 & 0.780 & \textbf{0.396} & 0.397\\
+ & 0.75 & 33.75\,$\pm$5.45 & 2.989 & 0.789 & 0.351 & 0.312 & 0.310 & \textbf{0.264}\\
+ & 0.9 & 134.66\,$\pm$19.25 & 2.279 & 0.607 & 0.371 & 0.289 & 0.486 & \textbf{0.282}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering\footnotesize
+\caption{Robustness (ratio to JSW). Noise: routing on $\hat S=Se^{\sigma N-\sigma^2/2}$ with tuned parameters left unchanged. Design load: FLUID-S built for $\hat\rho=\rho\pm0.05$.}\label{tab:robust}
+\begin{tabular}{@{}llccccccc@{}}
+\toprule
+Law & $\rho$ & \multicolumn{2}{c}{SITA, $\sigma=$} & \multicolumn{2}{c}{CARD, $\sigma=$} & \multicolumn{2}{c}{FLUID-S, $\sigma=$} & FLUID-S, $\hat\rho=$\\
+& & 0.5 & 1 & 0.5 & 1 & 0.5 & 1 & $\rho-0.05$ / $\rho+0.05$\\
+\midrule
+Exponential & 0.75 & 2.613 & $>10^3$ & 0.922 & 0.989 & 0.904 & 0.959 & 0.848 / 0.891\\
+ & 0.9 & $>10^3$ & $>10^3$ & 0.938 & 1.003 & 0.848 & 0.895 & 0.774 / 0.971\\
+H$_2$, SCV 10 & 0.75 & 0.470 & 0.907 & 0.428 & 0.555 & 0.401 & 0.496 & 0.369 / 0.351\\
+ & 0.9 & 0.400 & 1.939 & 0.304 & 0.452 & 0.290 & 0.380 & 0.259 / 0.275\\
+\bottomrule
+\end{tabular}
+\end{table}

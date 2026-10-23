@@ -1,0 +1,63 @@
+{
+ "D_H": "22/9",
+ "H": "3",
+ "bin_policy": [
+  {
+   "atoms": 32,
+   "bin_policy_cost_rounded_up": "0.8564130213",
+   "regret_bound_rounded_up": "0.0028712914",
+   "tail_cut_R": "1365.33",
+   "tail_first_moment": "1/64"
+  },
+  {
+   "atoms": 118,
+   "bin_policy_cost_rounded_up": "0.8540470308",
+   "regret_bound_rounded_up": "0.0005053009",
+   "tail_cut_R": "21845.33",
+   "tail_first_moment": "1/256"
+  },
+  {
+   "atoms": 232,
+   "bin_policy_cost_rounded_up": "0.8539305558",
+   "regret_bound_rounded_up": "0.0003888259",
+   "tail_cut_R": "349525.33",
+   "tail_first_moment": "1/1024"
+  }
+ ],
+ "law": "Pareto shape 3/2, scale 1/3 (mean 1, infinite variance)",
+ "rho": "3/4",
+ "state": "x=1, y=0 (workloads 1/2,1/2)",
+ "status": "PASS",
+ "value_enclosure": [
+  {
+   "grid_cells": 16,
+   "lower_rounded_down": "0.8308050997",
+   "upper_rounded_up": "0.8755718556",
+   "width_rounded_up": "0.0447667559"
+  },
+  {
+   "grid_cells": 64,
+   "lower_rounded_down": "0.8482543349",
+   "upper_rounded_up": "0.8594416182",
+   "width_rounded_up": "0.0111872832"
+  },
+  {
+   "grid_cells": 256,
+   "lower_rounded_down": "0.8524897034",
+   "upper_rounded_up": "0.8552879864",
+   "width_rounded_up": "0.0027982830"
+  },
+  {
+   "grid_cells": 1024,
+   "lower_rounded_down": "0.8535417299",
+   "upper_rounded_up": "0.8542414350",
+   "width_rounded_up": "0.0006997051"
+  }
+ ],
+ "wasserstein_route_for_one_percent": {
+  "C_rho": "9/2",
+  "comment": "tau(R)=0.577/sqrt(R): R ~ 4e5 and ~1e9 bins",
+  "required_mesh_at_most": "0.001898314300",
+  "required_tail_moment_at_most": "0.000949157150"
+ }
+}

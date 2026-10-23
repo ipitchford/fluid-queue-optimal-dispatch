@@ -1,0 +1,6 @@
+{
+ "gradient_identity": "verified with generic D and B, B' = -1/(r D^2)",
+ "sector_formula_alpha_nonzero": "verified",
+ "sector_formula_alpha_zero": "verified",
+ "status": "PASS"
+}

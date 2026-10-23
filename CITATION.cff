@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research candidate by its DOI."
+title: "Exact optimal dispatching to two fluid queues: closed form, heavy traffic and stochastic evidence"
+type: software
+authors:
+  - name: Anonymous
+version: 1.0.0-candidate
+doi: 10.5281/zenodo.23586955
+date-released: 2026-10-23
+repository-code: "https://github.com/ipitchford/fluid-queue-optimal-dispatch"
+url: "https://evidencepress.org/releases/fluid-queue-optimal-dispatch/"
+license:
+  - CC0-1.0
+  - MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23586955
+    description: "Version DOI (1.0.0-candidate)"
+  - type: doi
+    value: 10.5281/zenodo.23586954
+    description: "Concept DOI (all versions)"
+keywords:
+  - size-aware dispatching
+  - fluid queues
+  - optimal control
+  - verification theorem
+  - heavy traffic
+  - convex order
+  - exact computation
+abstract: "Xie, Hyytiä and Righter (ACM SIGMETRICS Perform. Eval. Rev. 53(4) (2026) 42-48; arXiv:2509.21693v1) introduced a fluid model of size-aware dispatching and conjectured that, with two servers, the relative workload imbalance increases along every optimal path. This package solves the two-server problem exactly: for every nondegenerate mean-one size law and every load below one, one quadrature of D(h)=E|S-h| gives the optimal value, policy and path. Small jobs go to the shorter queue and large jobs to the longer one, with a cutoff that rises with the imbalance. The conjecture is proved as posed and extended to all nondegenerate laws, with a unique optimal path; it fails for deterministic sizes. The heavy-traffic limit (1-rho)V -> P(S>=m)x^2 (m the work median, atoms split) corrects a factor in the source's Proposition 3 and matches the CARD constant of Xie, Grosof and Scully (fluid limit proved; stochastic link heuristic). Further results: an exact rational controller for finite laws, certified bounds and a bin policy, Wasserstein stability, an exact Pareto enclosure and noisy-estimate bounds. A seeded simulation of the stochastic queue is numerical evidence only; no policy dominates in every cell. Unrefereed AI-assisted candidate; checked by internal AI-assisted review, two AI-assisted adversarial audits and a verification re-review only. Text and data CC0-1.0; code MIT (see LICENSES.md)."
+references:
+  - type: article
+    title: "Size-Aware Dispatching to Fluid Queues"
+    authors:
+      - family-names: Xie
+        given-names: Runhan
+      - family-names: Hyytiä
+        given-names: Esa
+      - family-names: Righter
+        given-names: Rhonda
+    journal: "ACM SIGMETRICS Performance Evaluation Review"
+    volume: 53
+    issue: 4
+    start: 42
+    end: 48
+    year: 2026
+    doi: 10.1145/3797823.3797843

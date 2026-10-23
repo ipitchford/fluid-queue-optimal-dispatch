@@ -1,0 +1,149 @@
+{
+ "schemaVersion": "1.0",
+ "release": "fluid-queue-optimal-dispatch",
+ "version": "1.0.0-candidate",
+ "tag": "v1.0.0-candidate",
+ "doi": "10.5281/zenodo.23586955",
+ "conceptDoi": "10.5281/zenodo.23586954",
+ "repository": "https://github.com/ipitchford/fluid-queue-optimal-dispatch",
+ "creator": "Anonymous",
+ "status": "unrefereed-candidate",
+ "manuscript": "paper/paper.pdf",
+ "source": {
+  "citation": "Xie, Hyytiä and Righter, Size-aware dispatching to fluid queues, ACM SIGMETRICS Performance Evaluation Review 53(4) (2026) 42-48",
+  "doi": "10.1145/3797823.3797843",
+  "openVersion": "arXiv:2509.21693v1",
+  "conjecture": "Section 5 (symbolic) and Section 6.1 (verbal): relative imbalance increases along every optimal trajectory",
+  "wordingCheckedAgainst": "arXiv:2509.21693v1; publisher DOI page HTTP 403 during revision; a public copy of the published issue has the same conjecture wording and Proposition 3 (see SOURCES.md)"
+ },
+ "boundary": "'proved' means a written proof in the manuscript (some steps are exact identities checked by the code), not formal verification; 'exact' means a finite exact rational computation for the stated cases; 'heuristic' means an argument that is not a proof; 'numerical' means floating-point or simulation evidence only; 'open' is not claimed. All theorems concern the fluid model, not the stochastic queue. Internal AI-assisted review is not peer review or independent reproduction.",
+ "claims": [
+  {
+   "id": "exact-value-and-policy",
+   "location": "Theorem 3; Lemma 2; eq. (4.4); Sections 4-5; Appendix A",
+   "status": "proved",
+   "statement": "For every nonnegative mean-one size law that is not a point mass and every 0<rho<1, the explicit V of eq. (4.4), built from one quadrature of D(h)=E|S-h|, is the minimum cost over all admissible controls including idling ones; the threshold feedback policy pi* attains it and reaches an axis in finite time.",
+   "computationalCheck": "results/exact_finite_support.json (16 law-load cases: 544 allocation-vertex Hamiltonian checks, 86 zero residuals, 19 value/gradient matches); results/quadrature_checks.json; results/symbolic_identities.json"
+  },
+  {
+   "id": "conjecture-relative-imbalance",
+   "location": "Theorem 4; Section 6; Section 1 (boxed quotation)",
+   "status": "proved",
+   "statement": "Along every optimal admissible pair the relative imbalance z is nondecreasing, strictly increasing while 0<y<x (dz/dx<0 almost everywhere there); no return to or dwelling on the diagonal. Proves the verbal conjecture of XHR Sections 5 and 6.1 as posed (sizes with a density) and extends it to all nondegenerate laws. The literal symbolic form y-hat' >= 0 with ' = d/dx is false for every nondegenerate law and is read as a sign convention or slip.",
+   "computationalCheck": "results/quadrature_checks.json (path monotonicity, illustration only)"
+  },
+  {
+   "id": "unique-optimal-path",
+   "location": "Theorem 5; eq. (4.5); Remark 6; Appendix B",
+   "status": "proved",
+   "statement": "Exactly one optimal labelled workload path from unequal workloads, exactly two mirror-image paths from equal positive workloads, and the origin from the origin; explicit path formula; every closed-loop solution under pi* is optimal; from a positive tie the closed-loop system has two solutions even when the diagonal action is fixed, so the tie-break does not select one."
+  },
+  {
+   "id": "running-example",
+   "location": "Section 4 (running example); Figure 1; Table 3",
+   "status": "exact",
+   "statement": "Sizes 1/2 and 3/2 equally likely, rho=3/4, start (1/2,1/2): optimal cost 33/28 (phases 45/196+33/49+27/98), switch at z=3/13, axis fraction theta=5/9, balanced routing 3/2, most-work-left 21/16.",
+   "computationalCheck": "results/two_point_certificate.json; results/exact_finite_support.json"
+  },
+  {
+   "id": "deterministic-sizes",
+   "location": "Section 7; eq. (7.1)",
+   "status": "proved",
+   "statement": "For S=1 the value is elementary; many optimal paths exist and some decrease the imbalance (rate -5/8 at rho=3/4 from (1,1/2)), so the conjecture cannot extend to degenerate sizes. XHR Proposition 5 requires rho>=1/2 (at rho=1/4 balanced costs 1/6, longer-queue-first 3/16).",
+   "computationalCheck": "results/deterministic_checks.json"
+  },
+  {
+   "id": "xhr-prop3-correction",
+   "location": "Section 8; eq. (8.1)",
+   "status": "proved",
+   "statement": "Direct integration gives the most-work-left value eq. (8.1); XHR's printed Proposition 3 has an extra factor 2rho in its axis term (exponential, rho=3/4, (1/2,1/2): printed 1.19401 vs 1.10851; two-point exact 3/2 vs 21/16). The published PER version prints the same formula as arXiv v1.",
+   "computationalCheck": "results/source_comparison.json"
+  },
+  {
+   "id": "xhr-corollary4",
+   "location": "Section 8",
+   "status": "proved",
+   "statement": "For nondegenerate laws no straight-to-origin segment in the interior and no balanced dwelling is ever optimal; the optimal axis phase is itself a straight-to-origin path."
+  },
+  {
+   "id": "heavy-traffic-limit",
+   "location": "Theorem 10; Section 9; Table 4",
+   "status": "proved",
+   "statement": "For every nondegenerate mean-one law P-bar<1/2 and, for 1/2<rho<1, rho(1-F_H)x^2 <= (1-rho)V <= (rho/2)(1-1/B(0))x^2, both bounds tending to P-bar x^2; hence (1-rho)V -> P(S>=m)x^2 uniformly (m the work median, atoms split). Most-work-left has the same limit; the optimal-to-balanced ratio tends to 2 P-bar.",
+   "computationalCheck": "results/heavy_traffic.json (sandwich checked numerically at rho=0.9,0.99,0.999; exact two-point sequence)"
+  },
+  {
+   "id": "card-reconciliation",
+   "location": "Section 9 (Reconciliation with Xie-Grosof-Scully)",
+   "status": "heuristic",
+   "statement": "The fluid ratio 2 P-bar equals the ratio of the heavy-traffic constants of CARD and least-work-left (Xie, Grosof, Scully 2024); via XHR's correspondence E W = E[v(X,0)] the corrected constant gives CARD's constant (the printed one would give twice it). The fluid statement is proved; the passage to the stochastic system is not. The CARD constants assume E[S^2]<infinity (Xie-Grosof-Scully Section 2.1); the fluid theorem needs only the first moment."
+  },
+  {
+   "id": "finite-support-controller",
+   "location": "Theorem 11; eq. (10.1); Appendix C",
+   "status": "proved",
+   "statement": "For K-point laws the value is a quadratic form on each of at most K+1 sectors, with rational coefficients from one O(K) backward pass (arithmetic operations); sector lookup O(log K).",
+   "computationalCheck": "code/fluid_exact.py; results/exact_finite_support.json; results/symbolic_identities.json"
+  },
+  {
+   "id": "envelope-convex-order-bracket",
+   "location": "Proposition 12; Corollary 13; eq. (10.3); Appendix D",
+   "status": "proved",
+   "statement": "Envelope formula for V; convex order lowers the value (direct proof of XHR Proposition 4); convex-order discretisation brackets V and the bin policy has cost V_{S-} and regret at most V_{S-}-V_{S+}. Uniform[0,2], rho=3/4: brackets [1.0982,1.1250], [1.11131,1.11252], [1.111962,1.112070] for 4, 16, 64 bins (exact, rounded outwards).",
+   "computationalCheck": "results/certified_binning.json"
+  },
+  {
+   "id": "wasserstein-stability",
+   "location": "Theorem 14; Section 10.3; Appendix D",
+   "status": "proved",
+   "statement": "|V_X-V_Y| <= C_rho x^2 W_1(X,Y), C_rho = rho r/(2 min(1-rho,1/2)), for any mean-one laws including degenerate ones. The constant is qualitative: it exceeds the true gap by factors 5.4, 7.4, 16.4 at rho=0.3, 0.75, 0.9 (exponential vs uniform).",
+   "computationalCheck": "results/wasserstein_looseness.json (numerical)"
+  },
+  {
+   "id": "pareto-enclosures",
+   "location": "Section 10.4; Table 5",
+   "status": "exact",
+   "statement": "Pareto shape 1.5 (infinite variance), rho=3/4, (1/2,1/2): exact rational enclosure of width 7.0e-4 at 1024 cells and a 232-atom bin policy with regret <= 3.9e-4. Pareto shape 1.01: 0.401013 < V(1,0) < 0.402732, used as a regression test for the quadrature code.",
+   "computationalCheck": "results/pareto_certificate.json; results/pareto_101_regression.json"
+  },
+  {
+   "id": "noisy-size-estimates",
+   "location": "Proposition 15; Section 10.5",
+   "status": "proved",
+   "statement": "Routing on an estimate S-hat has optimal value V for the law of E[S|S-hat]; 0 <= loss <= C_rho x^2 E|S-E[S|S-hat]| <= 2 C_rho x^2 E|S-S-hat|. The rule is pi* for the law of E[S|S-hat] if that law is nondegenerate, and the deterministic controller of Section 7 if E[S|S-hat]=1. A miscalibrated rule is not covered."
+  },
+  {
+   "id": "quadrature-tables",
+   "location": "Tables 3-4; Section 12",
+   "status": "numerical",
+   "statement": "Six-law optimal costs at rho=3/4 (savings 21-43% vs balanced, 7-18% vs most-work-left) and the heavy-traffic table, from the floating-point quadrature code on its tested domain (Section 12).",
+   "computationalCheck": "results/quadrature_checks.json; results/heavy_traffic.json"
+  },
+  {
+   "id": "dp-cross-check",
+   "location": "Section 10.1 (Independent optimality check)",
+   "status": "numerical",
+   "statement": "A semi-Lagrangian Bellman/policy-iteration scheme that does not use the value formula agrees with it to relative error <= 2.2e-5 (two-point), 1.6e-5 (three-point with zero atom) and 3.1e-5 (deterministic) after Richardson extrapolation.",
+   "computationalCheck": "code/dp_check.py; results/dp_cross_check.json"
+  },
+  {
+   "id": "stochastic-simulation",
+   "location": "Section 11; Tables 6-7",
+   "status": "numerical",
+   "statement": "Seeded simulation of the stochastic two-server queue (4 laws, loads 0.5/0.75/0.9, 20 replications of 1e6 arrivals, common random numbers). The direct fluid rule beats JSW for highly variable sizes (ratios 0.31-0.60) but is far worse for exponential and two-point sizes at rho>=0.75; the stabilised rule FLUID-S is best or tied in 6 of 12 cells, tuned Dice in 5; no policy dominates. Numerical evidence only.",
+   "computationalCheck": "code/simulate.py; results/simulation.json"
+  },
+  {
+   "id": "stabilised-rule-optimality",
+   "location": "Section 12",
+   "status": "open",
+   "statement": "Stability or asymptotic optimality of a stabilised fluid rule in the stochastic system is not proved."
+  },
+  {
+   "id": "more-servers-heterogeneous",
+   "location": "Section 12",
+   "status": "open",
+   "statement": "More than two servers (scalar reduction lost), heterogeneous rates, sharp stability constants, and the viscosity-solution status of V are open."
+  }
+ ]
+}

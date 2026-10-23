@@ -1,0 +1,13 @@
+This repository has two licences.
+
+1. Text, figures, results and documentation: CC0 1.0 Universal (public domain
+   dedication). This covers paper/, figures/, results/, README.md and the other
+   release records. See LICENSE-TEXT and PUBLIC_DOMAIN.md. Legal code:
+   https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+2. Code: MIT License, Copyright (c) 2026 Anonymous. This covers code/*.py,
+   tools/*.py, negative_controls.py and .github/workflows/replay.yml.
+   See LICENSE-CODE for the full text.
+
+Short quotations from cited works keep their own terms. The component map is
+in LICENSES.md.

@@ -1,0 +1,376 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 23 October 2026 for release 1.0.0-candidate from the bounded novelty search of 19 October 2026 (research_ledger.md and novelty/queue/novelty_report.md of the research bundle), the internal review, adversarial audit and verification re-review and second adversarial audit records of 23 October 2026, and a retrospective intake check (Semantic Scholar citation graph, Crossref and arXiv API) run on 23 October 2026 at release preparation. The Evidence Press corpus was checked by the publication coordinator: no prior release on this source. Results added in revision (heavy traffic, Proposition 3 correction, noisy estimates, simulation) were covered only by the 23 October searches and the reviewers' literature checks. It documents the scrutiny performed, not historical priority.",
+ "contributionMap": [
+  {
+   "claim": "Exact solution of XHR's two-server fluid problem: for every nondegenerate mean-one size law and every 0<rho<1, a single quadrature of D(h)=E|S-h| gives the value V (eq. 4.4), the threshold feedback policy and the optimal path; global verification over all admissible controls including idling and reflection.",
+   "unit": "statement",
+   "paperLocation": "Abstract; Theorem 3; Lemma 2; Sections 4-5",
+   "searches": [
+    {
+     "date": "2026-10-19",
+     "query": "\"Size-Aware Dispatching to Fluid Queues\"; \"conjecture\" \"queueing\" \"2025\" monotonicity; \"Size-Aware Dispatching\" \"optimal\" 2026; source-title search excluding known hosts",
+     "corpus": "web search service; arXiv abstract/HTML; University of Iceland publication record (novelty report, Section 5)"
+    },
+    {
+     "date": "2026-10-19",
+     "query": "\"fluid\" \"dispatching\" \"absolute deviation\"; \"E|X-h|\" \"integral\"; \"queueing\" \"mean absolute deviation\" \"routing\"; \"fluid queues\" \"Beltrami\"; \"absolute deviation\" \"Beltrami\" \"optimal control\"; \"fluid dispatching\" \"optimal\" \"quadrature\"; dispatching fluid \"stop-loss\"; \"fluid\" \"routing\" \"closed-form\" \"threshold\" \"two\"",
+     "corpus": "web search service, arXiv full text, publisher abstracts (formula and alias searches)"
+    },
+    {
+     "date": "2026-10-19",
+     "query": "exact fingerprints: \"32,25,20,17,16,17,20,25,32\" (Uniform D sequence); \"fluid\" \"queue\" \"33/28\"; \"dispatching\" \"absolute-deviation potential\"; switching ratio 3/13",
+     "corpus": "web search service (fingerprint reruns after the D(h) simplification)"
+    },
+    {
+     "date": "2026-10-23",
+     "query": "retrospective intake check: works citing arXiv:2509.21693 / doi:10.1145/3797823.3797843",
+     "corpus": "Semantic Scholar graph (paper a57f9803...: citationCount 0; citations list empty); Crossref is-referenced-by-count 0 for the DOI"
+    },
+    {
+     "date": "2026-10-23",
+     "query": "Crossref query.bibliographic 'fluid queues size-aware dispatching conjecture relative imbalance'; arXiv API all:dispatching AND all:fluid AND all:queues (sorted by date)",
+     "corpus": "Crossref REST API (returned XHR itself, Hyytia-Righter 2024, its 2023 SSRN version, older dispatching papers; none resolves the conjecture); arXiv API (only XHR relevant). A Semantic Scholar relevance search was attempted and refused with HTTP 429 (rate limit)."
+    },
+    {
+     "date": "2026-10-23",
+     "query": "Evidence Press corpus check for releases on the same source (XHR)",
+     "corpus": "Evidence Press releases, checked by the publication coordinator: no prior release on this source"
+    }
+   ],
+   "closestPriorWork": "XHR arXiv:2509.21693v1 Sections 4-5 (variational problem, threshold structure, numerical optimal paths; no closed form); Hyytia-Righter 2024 (stochastic Bellman approach, different objective)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Proof of XHR's conjecture: along every optimal path the relative imbalance is nondecreasing and strictly increasing in the unequal interior (dz/dx<0 a.e.); proved as posed (density) and extended to all nondegenerate laws; fails for deterministic sizes.",
+   "unit": "proof",
+   "paperLocation": "Theorem 4; Section 6; Section 7",
+   "searches": [
+    {
+     "date": "2026-10-19",
+     "query": "\"Size-Aware Dispatching to Fluid Queues\"; \"conjecture\" \"queueing\" \"2025\" monotonicity; \"Size-Aware Dispatching\" \"optimal\" 2026; source-title search excluding known hosts",
+     "corpus": "web search service; arXiv abstract/HTML; University of Iceland publication record (novelty report, Section 5)"
+    },
+    {
+     "date": "2026-10-23",
+     "query": "retrospective intake check: works citing arXiv:2509.21693 / doi:10.1145/3797823.3797843",
+     "corpus": "Semantic Scholar graph (paper a57f9803...: citationCount 0; citations list empty); Crossref is-referenced-by-count 0 for the DOI"
+    },
+    {
+     "date": "2026-10-23",
+     "query": "Crossref query.bibliographic 'fluid queues size-aware dispatching conjecture relative imbalance'; arXiv API all:dispatching AND all:fluid AND all:queues (sorted by date)",
+     "corpus": "Crossref REST API (returned XHR itself, Hyytia-Righter 2024, its 2023 SSRN version, older dispatching papers; none resolves the conjecture); arXiv API (only XHR relevant). A Semantic Scholar relevance search was attempted and refused with HTTP 429 (rate limit)."
+    },
+    {
+     "date": "2026-10-23",
+     "query": "Evidence Press corpus check for releases on the same source (XHR)",
+     "corpus": "Evidence Press releases, checked by the publication coordinator: no prior release on this source"
+    }
+   ],
+   "closestPriorWork": "XHR Section 5 and 6.1 (the conjecture itself) and Corollary 4 (monotone imbalance or straight-to-origin)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Uniqueness of the optimal labelled workload path (two mirror images from a tied start), via a conserved Beltrami scale k for every optimal path.",
+   "unit": "statement",
+   "paperLocation": "Theorem 5; Appendix B",
+   "searches": [
+    {
+     "date": "2026-10-19",
+     "query": "\"Size-Aware Dispatching to Fluid Queues\"; \"conjecture\" \"queueing\" \"2025\" monotonicity; \"Size-Aware Dispatching\" \"optimal\" 2026; source-title search excluding known hosts",
+     "corpus": "web search service; arXiv abstract/HTML; University of Iceland publication record (novelty report, Section 5)"
+    },
+    {
+     "date": "2026-10-19",
+     "query": "\"fluid\" \"dispatching\" \"absolute deviation\"; \"E|X-h|\" \"integral\"; \"queueing\" \"mean absolute deviation\" \"routing\"; \"fluid queues\" \"Beltrami\"; \"absolute deviation\" \"Beltrami\" \"optimal control\"; \"fluid dispatching\" \"optimal\" \"quadrature\"; dispatching fluid \"stop-loss\"; \"fluid\" \"routing\" \"closed-form\" \"threshold\" \"two\"",
+     "corpus": "web search service, arXiv full text, publisher abstracts (formula and alias searches)"
+    },
+    {
+     "date": "2026-10-23",
+     "query": "Crossref query.bibliographic 'fluid queues size-aware dispatching conjecture relative imbalance'; arXiv API all:dispatching AND all:fluid AND all:queues (sorted by date)",
+     "corpus": "Crossref REST API (returned XHR itself, Hyytia-Righter 2024, its 2023 SSRN version, older dispatching papers; none resolves the conjecture); arXiv API (only XHR relevant). A Semantic Scholar relevance search was attempted and refused with HTTP 429 (rate limit)."
+    }
+   ],
+   "closestPriorWork": "None found for uniqueness; the Beltrami first integral itself is classical",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Verification technique: Beltrami first integral y D(h)/h = k for the candidate, then the sufficiency half of dynamic programming with a state constraint (reflection), a kink on the diagonal and infinite-horizon transversality; D(h) is the absolute-deviation (stop-loss) transform.",
+   "unit": "method",
+   "paperLocation": "Sections 3, 5; Lemma 7; Proposition 8; Lemma 9",
+   "searches": [
+    {
+     "date": "2026-10-19",
+     "query": "\"fluid\" \"dispatching\" \"absolute deviation\"; \"E|X-h|\" \"integral\"; \"queueing\" \"mean absolute deviation\" \"routing\"; \"fluid queues\" \"Beltrami\"; \"absolute deviation\" \"Beltrami\" \"optimal control\"; \"fluid dispatching\" \"optimal\" \"quadrature\"; dispatching fluid \"stop-loss\"; \"fluid\" \"routing\" \"closed-form\" \"threshold\" \"two\"",
+     "corpus": "web search service, arXiv full text, publisher abstracts (formula and alias searches)"
+    }
+   ],
+   "closestPriorWork": "Fleming-Soner 2006, Bardi-Capuzzo-Dolcetta 1997, Soner 1986 (verification with state constraints); Shaked-Shanthikumar 2007 and van Eekelen-den Hertog-van Leeuwaarden 2022 (absolute-deviation transform); all cited, technique not claimed new",
+   "verdict": "known-cited"
+  },
+  {
+   "claim": "Correction of XHR Proposition 3 (most-work-left value has an extra factor 2rho in the axis term) and the corrected value eq. (8.1); XHR Proposition 5 requires rho>=1/2. The published PER version prints the same formula.",
+   "unit": "identification",
+   "paperLocation": "Section 8; Section 7",
+   "searches": [
+    {
+     "date": "2026-10-19",
+     "query": "\"Size-Aware Dispatching to Fluid Queues\"; \"conjecture\" \"queueing\" \"2025\" monotonicity; \"Size-Aware Dispatching\" \"optimal\" 2026; source-title search excluding known hosts",
+     "corpus": "web search service; arXiv abstract/HTML; University of Iceland publication record (novelty report, Section 5)"
+    },
+    {
+     "date": "2026-10-19",
+     "query": "source normalisation audit of the published-version text: Proposition 3, Appendix 8.2",
+     "corpus": "downloaded PDF of XHR (novelty report Section 7)"
+    },
+    {
+     "date": "2026-10-23",
+     "query": "retrospective intake check: works citing arXiv:2509.21693 / doi:10.1145/3797823.3797843",
+     "corpus": "Semantic Scholar graph (paper a57f9803...: citationCount 0; citations list empty); Crossref is-referenced-by-count 0 for the DOI"
+    }
+   ],
+   "closestPriorWork": "XHR Proposition 3 and Remark 1 (random split agrees with the paper's normalisation)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Heavy-traffic limit (1-rho)V -> P-bar x^2 with explicit sandwich, P-bar<1/2; the fluid ratio 2 P-bar equals the CARD / least-work-left constant ratio of Xie-Grosof-Scully.",
+   "unit": "statement",
+   "paperLocation": "Theorem 10; Section 9; Table 4",
+   "searches": [
+    {
+     "date": "2026-10-23",
+     "query": "Crossref (published 2024 onward) 'heavy-traffic size-aware dispatching fluid limit work median'; 'dispatching job size estimates fluid model conditional expectation'; 'explicit optimal control two fluid queues mean absolute deviation'; arXiv API abs:\"heavy traffic\" AND abs:dispatching AND abs:size",
+     "corpus": "Crossref REST API; arXiv API. Only Xie-Grosof-Scully (2024, cited) and XHR matched; no fluid heavy-traffic limit or estimate-routing result for this model found"
+    },
+    {
+     "date": "2026-10-23",
+     "query": "retrospective intake check: works citing arXiv:2509.21693 / doi:10.1145/3797823.3797843",
+     "corpus": "Semantic Scholar graph (paper a57f9803...: citationCount 0; citations list empty); Crossref is-referenced-by-count 0 for the DOI"
+    }
+   ],
+   "closestPriorWork": "Xie, Grosof and Scully 2024 (doi:10.1145/3639035): K_CARD = 2P(S>=m) for the stochastic system, cited; XHR's printed heavy-traffic remark (factor 2 off)",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Exact rational finite-support controller: piecewise-quadratic value with an O(K) backward recurrence (eq. 10.1).",
+   "unit": "object",
+   "paperLocation": "Theorem 11; Appendix C",
+   "searches": [
+    {
+     "date": "2026-10-19",
+     "query": "\"fluid\" \"dispatching\" \"piecewise quadratic\"; \"size-aware\" \"piecewise\" \"quadratic\"; \"explicit model predictive control\" \"piecewise quadratic\" \"queue\"; \"fluid dispatching\" \"finite support\"; Bemporad Morari Dua Pistikopoulos 2002; \"optimal routing in two-queue polling systems\" fluid",
+     "corpus": "web search service; Bemporad et al. 2002 author PDF; Adan et al. arXiv:1608.03070 (rerun after the finite-support simplification)"
+    }
+   ],
+   "closestPriorWork": "Bemporad-Morari-Dua-Pistikopoulos 2002 (explicit piecewise-quadratic control, different cost); generic method credited, model-specific recurrence not found",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Envelope formula, convex-order comparison, certified bracket and bin policy; Wasserstein stability; exact rational enclosure for Pareto laws keeping the tail analytic; routing on noisy size estimates (Proposition 15, with a deterministic branch when E[S|S-hat]=1).",
+   "unit": "statement",
+   "paperLocation": "Proposition 12; Corollary 13; Theorem 14; Section 10.4; Proposition 15",
+   "searches": [
+    {
+     "date": "2026-10-19",
+     "query": "Wasserstein stability and distribution-approximation searches for the fluid value",
+     "corpus": "web search, indexed abstracts and excerpts (research ledger section 1; not exhaustive full text)"
+    },
+    {
+     "date": "2026-10-23",
+     "query": "Crossref (published 2024 onward) 'heavy-traffic size-aware dispatching fluid limit work median'; 'dispatching job size estimates fluid model conditional expectation'; 'explicit optimal control two fluid queues mean absolute deviation'; arXiv API abs:\"heavy traffic\" AND abs:dispatching AND abs:size",
+     "corpus": "Crossref REST API; arXiv API. Only Xie-Grosof-Scully (2024, cited) and XHR matched; no fluid heavy-traffic limit or estimate-routing result for this model found"
+    }
+   ],
+   "closestPriorWork": "XHR Proposition 4 (convex-order monotonicity, credited); Villani 2009 (couplings); Scully-Grosof-Mitzenmacher 2022 (scheduling with size estimates, different model)",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Stochastic simulation study and the stabilised fluid rule FLUID-S (safety band plus surplus axis rate); numerical evidence only.",
+   "unit": "method",
+   "paperLocation": "Section 11; Tables 6-7",
+   "searches": [
+    {
+     "date": "2026-10-23",
+     "query": "Crossref (published 2024 onward) 'heavy-traffic size-aware dispatching fluid limit work median'; 'dispatching job size estimates fluid model conditional expectation'; 'explicit optimal control two fluid queues mean absolute deviation'; arXiv API abs:\"heavy traffic\" AND abs:dispatching AND abs:size",
+     "corpus": "Crossref REST API; arXiv API. Only Xie-Grosof-Scully (2024, cited) and XHR matched; no fluid heavy-traffic limit or estimate-routing result for this model found"
+    },
+    {
+     "date": "2026-10-23",
+     "query": "Crossref query.bibliographic 'fluid queues size-aware dispatching conjecture relative imbalance'; arXiv API all:dispatching AND all:fluid AND all:queues (sorted by date)",
+     "corpus": "Crossref REST API (returned XHR itself, Hyytia-Righter 2024, its 2023 SSRN version, older dispatching papers; none resolves the conjecture); arXiv API (only XHR relevant). A Semantic Scholar relevance search was attempted and refused with HTTP 429 (rate limit)."
+    }
+   ],
+   "closestPriorWork": "Meyn 2008 (safety-stock principle), CARD (Xie-Grosof-Scully 2024), Dice (Hyytia-Righter 2022), XHR's F-BLB/F-blbh heuristics; FLUID-S resembles CARD's work threshold, stated in the paper",
+   "verdict": "partially-known-cited"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Xie, Hyytia, Righter, Size-aware dispatching to fluid queues, arXiv:2509.21693v1; ACM SIGMETRICS PER 53(4) (2026) 42-48, doi:10.1145/3797823.3797843",
+   "usedFor": "Target problem, model and normalisation, conjecture, Propositions 1, 3, 4, 5, Corollary 4",
+   "readWhat": "arXiv v1 Sections 3-5 in full (novelty search); Sections 5, 6.1, 8.2, Proposition 3 and Remark 1 rechecked in review and audit; the publisher DOI page returned HTTP 403 during revision; a public copy of the published issue was read by the audit and re-review (same Proposition 3)",
+   "date": "2026-10-23",
+   "evidenceLocator": "https://arxiv.org/abs/2509.21693v1, Sections 3-6.1 and Appendix 8.2; SOURCES.md"
+  },
+  {
+   "citation": "Xie, Grosof, Scully, Heavy-traffic optimal size- and state-aware dispatching, POMACS 8(1) (2024) Art. 9, doi:10.1145/3639035 (arXiv:2312.16377)",
+   "usedFor": "CARD heavy-traffic constant K_CARD = 2P(S>=m) and K_LWL = 1 for the Section 9 reconciliation; flexible CARD in the simulation",
+   "readWhat": "Eq. (2.1), Section 2.2 (CARD definition) and Theorem B.1, as checked in the verification re-review",
+   "date": "2026-10-23",
+   "evidenceLocator": "https://arxiv.org/abs/2312.16377, eq. (2.1), Section 2.2, Theorem B.1"
+  },
+  {
+   "citation": "Hyytia, Righter, Towards the optimal dynamic size-aware dispatching, Perform. Eval. 164 (2024) 102396; companion report arXiv:2402.08142v1",
+   "usedFor": "Closest stochastic prior work (Bellman approach); novelty boundary",
+   "readWhat": "Publisher abstract and introduction; report's model, Bellman-equation and implementation sections",
+   "date": "2026-10-19",
+   "evidenceLocator": "https://arxiv.org/abs/2402.08142v1; novelty report Section 6"
+  },
+  {
+   "citation": "Bemporad, Morari, Dua, Pistikopoulos, The explicit linear quadratic regulator for constrained systems, Automatica 38(1) (2002) 3-20",
+   "usedFor": "Related methodology for the piecewise-quadratic controller (Theorem 11)",
+   "readWhat": "Model (1), optimisation (3)/(7), Theorem 4, Corollary 1",
+   "date": "2026-10-19",
+   "evidenceLocator": "doi:10.1016/S0005-1098(01)00174-1; novelty report Section 11"
+  },
+  {
+   "citation": "Adan, Kulkarni, Lee, Lefeber, Optimal routeing in two-queue polling systems, J. Appl. Probab. 55(3) (2018) 944-967 (arXiv:1608.03070)",
+   "usedFor": "Closest fluid-control model with switching curves; novelty boundary",
+   "readWhat": "Sections 2 and 6 of the arXiv version",
+   "date": "2026-10-19",
+   "evidenceLocator": "https://arxiv.org/abs/1608.03070; novelty report Section 11"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "No proof that a stabilised fluid rule (FLUID-S) is stable or asymptotically optimal in the stochastic two-server queue.",
+   "closingQuestion": "Does a known fluid-to-stochastic translation theorem (Maglaras 2000, Bauerle 2000, Meyn 2008) apply to FLUID-S?",
+   "triedOrSearched": "Cited translation results reviewed in revision; their hypotheses (discrete review, tracking, network structure) do not cover a size-aware rule with this safety band without new work",
+   "estimatedCost": "weeks; new research",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Requires a new stochastic proof; stated as an open question in Section 12",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "More than two servers and heterogeneous service rates.",
+   "closingQuestion": "Does the scalar reduction survive?",
+   "triedOrSearched": "Scope discussed in Section 12; homogeneity in two dimensions gives a single imbalance coordinate only for two identical servers",
+   "estimatedCost": "weeks; new research",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "The one-dimensional reduction is lost; a different method is needed",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Heavy-traffic link from the fluid constant to the stochastic queue is heuristic.",
+   "closingQuestion": "Is there a proved correspondence E W = E[v(X,0)] in heavy traffic?",
+   "triedOrSearched": "Xie-Grosof-Scully proves the stochastic CARD constant directly; XHR use the correspondence heuristically; no proof found",
+   "estimatedCost": "weeks",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Not provable from the fluid analysis alone; labelled heuristic",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Wasserstein stability constant is qualitative (5.4-16.4 times the true gap).",
+   "closingQuestion": "Can a cheap a-posteriori bound replace it?",
+   "triedOrSearched": "Exact convex-order brackets (eq. 10.3) and the analytic-tail Pareto enclosure (Section 10.4) were added and are the practical certificates",
+   "estimatedCost": "done in revision",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Floating-point quadrature code silently failed for extreme heavy tails (audit finding Q1).",
+   "closingQuestion": "Can log-variable integration, warning checks and universal-bound checks close it?",
+   "triedOrSearched": "Implemented; regression against an exact rational enclosure for Pareto 1.01; Pareto 1.001 at rho>=3/4 rejected explicitly",
+   "estimatedCost": "hours",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "For Pareto shape 1.01 only V(x,0) is regression-tested; some interior states raise a root-finding error (loud, not silent).",
+   "closingQuestion": "Would solving the threshold equation in log h or raising brentq's iteration limit close it?",
+   "triedOrSearched": "Identified by the verification re-review; option of a code change noted",
+   "estimatedCost": "about 1-2 h plus a full replay",
+   "cheap": true,
+   "decision": "OPEN",
+   "reasonOpen": "Outside the paper's stated numerical results; the failure is an explicit error, not a wrong value",
+   "whyNotClosedNow": "A code change at this stage would require a new replay and re-freeze of all results; the release instead states the tested domain precisely, and the exact solver is unaffected"
+  },
+  {
+   "limitation": "Simulation tuning grids are small and some tuned parameters lie at a grid edge.",
+   "closingQuestion": "Would a wider grid change the conclusions?",
+   "triedOrSearched": "Stated in Section 11; robustness table shows FLUID-S tuning is not optimal (lower design load helps for exponential sizes)",
+   "estimatedCost": "several CPU-hours",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Numerical evidence only; conclusions are already hedged (no policy dominates)",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Viscosity-solution status of V for the reflected HJB equation.",
+   "closingQuestion": "Is it needed?",
+   "triedOrSearched": "The verification is direct and explicit, so no viscosity theory is used",
+   "estimatedCost": "not needed for any result",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Of independent interest only; stated as an open question",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Source wording checked against arXiv v1 in the paper; publisher DOI page returned HTTP 403.",
+   "closingQuestion": "Is a public copy of the published text available?",
+   "triedOrSearched": "Yes: the audit and the re-review read a public copy of the March 2026 issue; conjecture wording and Proposition 3 identical to arXiv v1",
+   "estimatedCost": "under 1 h",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "From a positive tie the closed-loop system under pi* has two solutions even with a fixed diagonal action (second audit R1).",
+   "closingQuestion": "Is a selection convention enough?",
+   "triedOrSearched": "Remark 6 now states the two-branch example and that every closed-loop solution is optimal; Theorem 5 (exactly two optimal paths from a tie) is unaffected",
+   "estimatedCost": "under 1 h",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "The CARD reconciliation and the stochastic simulation need E[S^2] < infinity; the fluid theorems need only the first moment (second audit P1).",
+   "closingQuestion": "Is the moment assumption stated where it is used?",
+   "triedOrSearched": "Section 9 now states E S^2 < infinity as in Xie-Grosof-Scully Section 2.1; the false universal infinite-variance sentence was removed; the bounded Pareto law has finite moments",
+   "estimatedCost": "under 1 h",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  }
+ ],
+ "extensionScout": {
+  "by": "internal AI-assisted review roles (editor, devil's advocate, perspective) and the editorial decision",
+  "date": "2026-10-23",
+  "proposals": [
+   "Heavy-traffic limit and reconciliation with Xie-Grosof-Scully and XHR Proposition 3",
+   "Stochastic simulation with a stabilised fluid rule",
+   "Practical certificate for unbounded laws keeping an analytic tail",
+   "Noisy size estimates and misspecified load",
+   "Independent dynamic-programming optimality check",
+   "Heterogeneous rates or three servers (stretch)"
+  ],
+  "actions": [
+   "Done: Theorem 10 and Section 8-9",
+   "Done: Section 11 and FLUID-S (numerical evidence only)",
+   "Done: Section 10.4 and Table 5",
+   "Done: Proposition 15 and Table 7",
+   "Done: code/dp_check.py, Section 10.1",
+   "Not done: stated as open in Section 12"
+  ]
+ }
+}

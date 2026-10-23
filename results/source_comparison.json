@@ -1,0 +1,33 @@
+{
+ "heavy_traffic": "printed: (1-rho)v -> 2 rho Pbar x^2; direct: (1-rho)v -> rho Pbar x^2",
+ "most_work_left": [
+  {
+   "direct_integration": 1.10851,
+   "law": "exponential",
+   "optimal": 0.91431933,
+   "rho": 0.75,
+   "state": [
+    0.5,
+    0.5
+   ],
+   "xhr_prop3_as_printed": 1.194015
+  },
+  {
+   "direct_integration": 1.3125,
+   "law": "two_point",
+   "optimal": 1.1785714,
+   "rho": 0.75,
+   "state": [
+    0.5,
+    0.5
+   ],
+   "xhr_prop3_as_printed": 1.5
+  }
+ ],
+ "random_split_source_remark1": "3/2",
+ "status": "PASS",
+ "two_point_exact": {
+  "direct": "21/16",
+  "printed": "3/2"
+ }
+}

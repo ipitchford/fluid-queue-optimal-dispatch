@@ -1,0 +1,112 @@
+{
+ "adjacent_value_gradient_matches": 19,
+ "allocation_vertex_hamiltonian_checks": 544,
+ "arithmetic": "exact rational",
+ "cases": [
+  {
+   "axis_coefficient": "0",
+   "law": "two_point",
+   "rho": "1/4",
+   "sectors": 3
+  },
+  {
+   "axis_coefficient": "0",
+   "law": "two_point",
+   "rho": "1/2",
+   "sectors": 2
+  },
+  {
+   "axis_coefficient": "2/3",
+   "law": "two_point",
+   "rho": "3/4",
+   "sectors": 2
+  },
+  {
+   "axis_coefficient": "8/3",
+   "law": "two_point",
+   "rho": "9/10",
+   "sectors": 2
+  },
+  {
+   "axis_coefficient": "0",
+   "law": "zero_atom",
+   "rho": "1/4",
+   "sectors": 2
+  },
+  {
+   "axis_coefficient": "0",
+   "law": "zero_atom",
+   "rho": "1/2",
+   "sectors": 1
+  },
+  {
+   "axis_coefficient": "1/2",
+   "law": "zero_atom",
+   "rho": "3/4",
+   "sectors": 1
+  },
+  {
+   "axis_coefficient": "2",
+   "law": "zero_atom",
+   "rho": "9/10",
+   "sectors": 1
+  },
+  {
+   "axis_coefficient": "0",
+   "law": "three_point",
+   "rho": "1/4",
+   "sectors": 4
+  },
+  {
+   "axis_coefficient": "0",
+   "law": "three_point",
+   "rho": "1/2",
+   "sectors": 3
+  },
+  {
+   "axis_coefficient": "4/7",
+   "law": "three_point",
+   "rho": "3/4",
+   "sectors": 3
+  },
+  {
+   "axis_coefficient": "37/16",
+   "law": "three_point",
+   "rho": "9/10",
+   "sectors": 2
+  },
+  {
+   "axis_coefficient": "0",
+   "law": "zero_skew",
+   "rho": "1/4",
+   "sectors": 3
+  },
+  {
+   "axis_coefficient": "0",
+   "law": "zero_skew",
+   "rho": "1/2",
+   "sectors": 2
+  },
+  {
+   "axis_coefficient": "1/2",
+   "law": "zero_skew",
+   "rho": "3/4",
+   "sectors": 2
+  },
+  {
+   "axis_coefficient": "2",
+   "law": "zero_skew",
+   "rho": "9/10",
+   "sectors": 2
+  }
+ ],
+ "law_load_cases": 16,
+ "optimal_residual_equalities": 86,
+ "status": "PASS",
+ "two_point_rho_3_4": {
+  "axis_value_at_x1": "2/3",
+  "switch_z": "3/13",
+  "terminal_large_atom_fraction": "5/9",
+  "value_at_x1_y0": "33/28"
+ }
+}

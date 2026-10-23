@@ -1,0 +1,87 @@
+{
+ "balanced_routing": "3/2",
+ "hamiltonian_vertex_checks": [
+  {
+   "min_H_over_x": "0",
+   "q_large": 0,
+   "q_small": 0,
+   "region": [
+    "0",
+    "3/13"
+   ]
+  },
+  {
+   "min_H_over_x": "27/112",
+   "q_large": 1,
+   "q_small": 0,
+   "region": [
+    "0",
+    "3/13"
+   ]
+  },
+  {
+   "min_H_over_x": "0",
+   "q_large": 0,
+   "q_small": 1,
+   "region": [
+    "0",
+    "3/13"
+   ]
+  },
+  {
+   "min_H_over_x": "9/28",
+   "q_large": 1,
+   "q_small": 1,
+   "region": [
+    "0",
+    "3/13"
+   ]
+  },
+  {
+   "min_H_over_x": "0",
+   "q_large": 0,
+   "q_small": 0,
+   "region": [
+    "3/13",
+    "1"
+   ]
+  },
+  {
+   "min_H_over_x": "9/26",
+   "q_large": 1,
+   "q_small": 0,
+   "region": [
+    "3/13",
+    "1"
+   ]
+  },
+  {
+   "min_H_over_x": "0",
+   "q_large": 0,
+   "q_small": 1,
+   "region": [
+    "3/13",
+    "1"
+   ]
+  },
+  {
+   "min_H_over_x": "0",
+   "q_large": 1,
+   "q_small": 1,
+   "region": [
+    "3/13",
+    "1"
+   ]
+  }
+ ],
+ "most_work_left": "21/16",
+ "optimal": "33/28",
+ "phase_costs": [
+  "45/196",
+  "33/49",
+  "27/98"
+ ],
+ "reduction_vs_balanced": "3/14",
+ "reduction_vs_most_work_left": "5/49",
+ "status": "PASS"
+}

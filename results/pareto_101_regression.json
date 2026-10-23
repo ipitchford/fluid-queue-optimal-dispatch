@@ -1,0 +1,85 @@
+{
+ "H": "3^100/101",
+ "concentrated_laws": [
+  {
+   "law": "lognormal",
+   "parameter": 0.05,
+   "rho": 0.3,
+   "value_x1_y0": 0.21321317
+  },
+  {
+   "law": "lognormal",
+   "parameter": 0.05,
+   "rho": 0.75,
+   "value_x1_y0": 1.4640111
+  },
+  {
+   "law": "lognormal",
+   "parameter": 0.05,
+   "rho": 0.9,
+   "value_x1_y0": 4.3506924
+  },
+  {
+   "law": "lognormal",
+   "parameter": 0.02,
+   "rho": 0.3,
+   "value_x1_y0": 0.21385834
+  },
+  {
+   "law": "lognormal",
+   "parameter": 0.02,
+   "rho": 0.75,
+   "value_x1_y0": 1.4855842
+  },
+  {
+   "law": "lognormal",
+   "parameter": 0.02,
+   "rho": 0.9,
+   "value_x1_y0": 4.4402212
+  },
+  {
+   "law": "gamma",
+   "parameter": 400,
+   "rho": 0.3,
+   "value_x1_y0": 0.21321328
+  },
+  {
+   "law": "gamma",
+   "parameter": 400,
+   "rho": 0.75,
+   "value_x1_y0": 1.464042
+  },
+  {
+   "law": "gamma",
+   "parameter": 400,
+   "rho": 0.9,
+   "value_x1_y0": 4.3507884
+  }
+ ],
+ "enclosure_lower_rounded_down": "0.401013445752",
+ "enclosure_upper_rounded_up": "0.402731605586",
+ "law": "Pareto shape 101/100 (mean 1)",
+ "peak_cell": {
+  "a": "8571/8192",
+  "b": "2143/2048",
+  "g_a": "0.002650052317705",
+  "g_b": "0.002649971768180",
+  "peak_bound": "0.002650374324008"
+ },
+ "quadrature_value": 0.40187318,
+ "quadrature_value_axis_x1_y1": 0.0,
+ "rho": "3/4",
+ "status": "PASS",
+ "unsupported_cases": [
+  {
+   "alpha": 1.001,
+   "result": "rejected: unsupported: terminal cutoff beyond floating-point range",
+   "rho": 0.75
+  },
+  {
+   "alpha": 1.001,
+   "result": "rejected: unsupported: terminal cutoff beyond floating-point range",
+   "rho": 0.9
+  }
+ ]
+}

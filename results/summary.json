@@ -1,0 +1,14 @@
+{
+ "certified_binning": "PASS",
+ "deterministic_checks": "PASS",
+ "dp_cross_check": "PASS",
+ "exact_finite_support": "PASS",
+ "heavy_traffic": "PASS",
+ "pareto_101_regression": "PASS",
+ "pareto_certificate": "PASS",
+ "quadrature_checks": "PASS",
+ "source_comparison": "PASS",
+ "symbolic_identities": "PASS",
+ "two_point_certificate": "PASS",
+ "wasserstein_looseness": "PASS"
+}
